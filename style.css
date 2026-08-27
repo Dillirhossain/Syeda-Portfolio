@@ -799,3 +799,127 @@ body {
     border: 1px solid #292938;
     border-radius: 18px;
 }
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.project-number {
+    color: #555568;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.project-footer {
+    margin-top: 28px;
+    padding-top: 18px;
+
+    border-top: 1px solid #292938;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #77778a;
+    font-size: 14px;
+}
+
+.project-footer span:last-child {
+    color: #a78bfa;
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover .project-footer span:last-child {
+    transform: translateX(6px);
+}
+.art-label {
+    display: inline-block;
+
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.art-preview {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    margin: 30px 0;
+}
+
+.preview-item {
+    width: 70px;
+    height: 70px;
+
+    border: 1px solid #292938;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #a78bfa;
+    font-size: 30px;
+
+    background: #0b0b12;
+
+    transition: 0.3s;
+}
+
+.preview-item:hover {
+    transform: translateY(-6px) rotate(4deg);
+    border-color: #a78bfa;
+}
+
+.art-status {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border: 1px solid #292938;
+    border-radius: 20px;
+
+    color: #77778a;
+    font-size: 13px;
+}
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #11111c;
+    border: 1px solid #a78bfa;
+    border-radius: 50%;
+
+    color: #a78bfa;
+    text-decoration: none;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background: #a78bfa;
+    color: #0b0b12;
+
+    transform: translateY(-4px);
+}
