@@ -923,3 +923,33 @@ body {
 
     transform: translateY(-4px);
 }
+.nav-links a {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+    height: 2px;
+
+    left: 50%;
+    bottom: -7px;
+
+    background: #a78bfa;
+
+    transform: translateX(-50%);
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
