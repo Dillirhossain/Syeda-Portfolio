@@ -626,3 +626,176 @@ body {
         word-break: break-word;
     }
 }
+/* Hero Artistic Glow */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    background: #a78bfa;
+    opacity: 0.08;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: 15%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+/* Hero Visual */
+
+.hero {
+    flex-direction: row;
+    gap: 70px;
+}
+
+.hero-visual {
+    width: 280px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.visual-circle {
+    width: 230px;
+    height: 230px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    border: 1px solid #a78bfa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #11111c;
+
+    box-shadow:
+        0 0 40px rgba(167, 139, 250, 0.12),
+        inset 0 0 40px rgba(167, 139, 250, 0.05);
+}
+
+.visual-circle span {
+    font-size: 70px;
+    color: #a78bfa;
+}
+
+.hero-visual p {
+    color: #888899;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        order: 1;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .visual-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .visual-circle span {
+        font-size: 55px;
+    }
+}
+/* Quick Facts */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.6fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.quick-facts {
+    padding: 30px;
+
+    background: #11111c;
+    border: 1px solid #292938;
+    border-radius: 18px;
+}
+
+.quick-facts h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #292938;
+}
+
+.fact:last-child {
+    border-bottom: none;
+}
+
+.fact span {
+    font-size: 22px;
+}
+
+.fact p {
+    color: #c9c9d6;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .quick-facts {
+        width: 100%;
+    }
+}
+/* Section Spacing */
+
+.about-section {
+    padding-bottom: 140px;
+}
+
+.skills-section {
+    padding-top: 120px;
+}
+.quick-facts {
+    padding: 35px;
+
+    background: #11111c;
+    border: 1px solid #292938;
+    border-radius: 18px;
+}
