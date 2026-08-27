@@ -953,3 +953,18 @@ body {
 .nav-links a:hover::after {
     width: 100%;
 }
+.social-links a {
+    position: relative;
+    overflow: hidden;
+
+    min-width: 110px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.15);
+}
