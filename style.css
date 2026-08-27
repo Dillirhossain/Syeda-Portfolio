@@ -526,3 +526,103 @@ body {
 .footer p:first-child {
     color: #a5a5b5;
 }
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 150px 6% 70px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+
+    /* Sections */
+
+    .about-section,
+    .skills-section,
+    .research-section,
+    .projects-section,
+    .art-section,
+    .contact-section {
+        padding: 80px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+
+    /* Research */
+
+    .research-card {
+        padding: 30px 22px;
+    }
+
+    .research-content h3 {
+        font-size: 24px;
+    }
+
+
+    /* Projects */
+
+    .project-card {
+        padding: 30px 22px;
+    }
+
+
+    /* Contact */
+
+    .email-link {
+        font-size: 17px;
+        word-break: break-word;
+    }
+}
