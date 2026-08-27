@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +35,10 @@ body {
     backdrop-filter: blur(10px);
 
     z-index: 1000;
+        background: rgba(11, 11, 18, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.12);
 }
 
 .logo {
