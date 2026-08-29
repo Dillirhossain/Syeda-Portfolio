@@ -1112,3 +1112,114 @@ body {
         right: 15px;
     }
 }
+/* =========================
+   Projects Section
+========================= */
+
+.projects-section {
+    padding: 100px 8%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.project-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.project-info h3 {
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+.project-info p {
+    line-height: 1.7;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.project-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-status.research {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-status.upcoming {
+    opacity: 0.7;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.project-tech span {
+    padding: 6px 11px;
+    border-radius: 15px;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Projects Responsive */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 70px 6%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Project Links */
+.project-link {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
